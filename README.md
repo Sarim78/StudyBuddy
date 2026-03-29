@@ -4,18 +4,25 @@
 
 > 🏆 Built as a hackathon project
 
-> Live Link: studybuddybeta.vercel.app/
+<div align="center">
+
+### 🌐 [Live Demo → studybuddybeta.vercel.app](https://studybuddybeta.vercel.app/)
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-studybuddybeta.vercel.app-brightgreen?style=for-the-badge&logo=vercel)](https://studybuddybeta.vercel.app/)
+
+</div>
+
 ---
 
 ## 🚀 What It Does
 
 StudyBuddy takes your syllabus or lecture notes and generates a **personalized, gamified study plan** in seconds:
 
-- **AI Breaks Down Your Content** --> Units, tasks, and quizzes are auto-generated from your input
-- **Earn XP & Level Up** --> Every task completed awards XP; accumulate enough to level up
-- **Build Streaks** --> Study daily to maintain streaks and earn bonus XP
-- **Take Quizzes** --> Pass unit quizzes to unlock the next topic
-- **Track Progress** --> Live sidebar shows your level, streak, time studied, and course completion
+- **AI Breaks Down Your Content** → Units, tasks, and quizzes are auto-generated from your input
+- **Earn XP & Level Up** → Every task completed awards XP; accumulate enough to level up
+- **Build Streaks** → Study daily to maintain streaks and earn bonus XP
+- **Take Quizzes** → Pass unit quizzes to unlock the next topic
+- **Track Progress** → Live sidebar shows your level, streak, time studied, and course completion
 
 ---
 
@@ -72,7 +79,7 @@ StudyBuddy/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/studybuddy.git
+git clone https://github.com/Sarim78/studybuddy.git
 cd studybuddy
 
 # 2. Install dependencies
