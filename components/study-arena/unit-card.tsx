@@ -40,7 +40,7 @@ export function UnitCard({ unit, completedTasks, onToggleTask }: UnitCardProps) 
       isCompleted && "border-primary/50 bg-primary/5",
       !unit.locked && !isCompleted && "hover:border-border"
     )}>
-      <CardHeader className="pb-3">
+      <CardHeader className="pb-4">
 
         {/* Clickable header row — toggles expand/collapse */}
         <button
@@ -48,7 +48,7 @@ export function UnitCard({ unit, completedTasks, onToggleTask }: UnitCardProps) 
           disabled={unit.locked}
           className="flex w-full items-start justify-between text-left group"
         >
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-6">
 
             {/* Unit number / status icon */}
             <div className={cn(
@@ -82,10 +82,10 @@ export function UnitCard({ unit, completedTasks, onToggleTask }: UnitCardProps) 
               )}>
                 {unit.title}
               </h3>
-              <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 {unit.description}
               </p>
-              <div className="mt-3 flex flex-wrap items-center gap-3">
+              <div className="mt-4 flex flex-wrap items-center gap-4">
                 <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
                   {unit.estimatedMinutes} min
@@ -124,7 +124,7 @@ export function UnitCard({ unit, completedTasks, onToggleTask }: UnitCardProps) 
 
         {/* Progress bar (only when unlocked) */}
         {!unit.locked && (
-          <div className="mt-4 relative">
+          <div className="mt-6 relative">
             <Progress value={progressPercent} className="h-2" />
             {/* Moving dot on the progress bar */}
             {progressPercent > 0 && progressPercent < 100 && (
@@ -139,7 +139,7 @@ export function UnitCard({ unit, completedTasks, onToggleTask }: UnitCardProps) 
 
       {/* Task list — rendered only when expanded and unlocked */}
       {isExpanded && !unit.locked && (
-        <CardContent className="space-y-2 pt-0">
+        <CardContent className="space-y-3 pt-0 pb-2">
           {unit.tasks.map((task, index) => (
             <div
               key={task.id}

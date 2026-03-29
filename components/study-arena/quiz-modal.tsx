@@ -160,7 +160,7 @@ export function QuizModal({ open, onClose, onComplete, unitTitle }: QuizModalPro
 
         {/* ── Active Quiz ── */}
         {!quizDone ? (
-          <div className="space-y-5">
+          <div className="space-y-6">
 
             {/* Progress bar + score */}
             <div>
@@ -175,19 +175,19 @@ export function QuizModal({ open, onClose, onComplete, unitTitle }: QuizModalPro
             </div>
 
             {/* Question text */}
-            <div className="rounded-xl bg-secondary/50 p-4 border border-border/50">
+            <div className="rounded-xl bg-secondary/50 p-6 border border-border/50">
               <p className="text-base font-medium leading-relaxed">{question.question}</p>
             </div>
 
             {/* Answer options */}
-            <div className="space-y-2">
+            <div className="space-y-3">
               {question.options.map((option, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleSelectAnswer(idx)}
                   disabled={showFeedback}
                   className={cn(
-                    "w-full rounded-xl border p-4 text-left text-sm transition-all",
+                    "w-full rounded-xl border p-6 text-left text-sm transition-all",
                     !showFeedback && "hover:border-primary/50 hover:bg-secondary/30 cursor-pointer border-border/50",
                     showFeedback && idx === question.correctIndex && "border-primary bg-primary/10",
                     showFeedback && selectedAnswer === idx && idx !== question.correctIndex && "border-destructive bg-destructive/10",

@@ -185,10 +185,10 @@ export function StudyDashboard({ onReset }: StudyDashboardProps) {
 
       <Header progress={progress} />
 
-      <main className="mx-auto max-w-6xl px-4 py-6">
+      <main className="mx-auto max-w-6xl px-6 lg:px-16 py-12">
 
         {/* ── Page Header ── */}
-        <div className="mb-8">
+        <div className="mb-12">
           <Button
             variant="ghost"
             size="sm"
@@ -198,7 +198,7 @@ export function StudyDashboard({ onReset }: StudyDashboardProps) {
             <ArrowLeft className="mr-1.5 h-4 w-4" />
             New Plan
           </Button>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-6">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/70 shadow-lg shadow-primary/20">
               <BookOpen className="h-7 w-7 text-primary-foreground" />
             </div>
@@ -212,10 +212,10 @@ export function StudyDashboard({ onReset }: StudyDashboardProps) {
         </div>
 
         {/* ── Two-Column Layout ── */}
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-10 lg:grid-cols-3">
 
           {/* Unit cards */}
-          <div className="space-y-4 lg:col-span-2">
+          <div className="space-y-6 lg:col-span-2">
             {plan.units.map((unit, index) => (
               <div
                 key={unit.id}

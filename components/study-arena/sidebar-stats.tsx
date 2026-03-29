@@ -32,7 +32,7 @@ export function SidebarStats({ plan, progress }: SidebarStatsProps) {
   const overallProgress = (completedTasks / totalTasks) * 100
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
 
       {/* ── Card 1: Your Progress ── */}
       <Card className="border-border/50 bg-card/80 backdrop-blur-sm overflow-hidden">
@@ -44,7 +44,7 @@ export function SidebarStats({ plan, progress }: SidebarStatsProps) {
             Your Progress
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-5">
+        <CardContent className="space-y-6">
 
           {/* XP level bar */}
           <div className="relative">
@@ -64,7 +64,7 @@ export function SidebarStats({ plan, progress }: SidebarStatsProps) {
           </div>
 
           {/* Streak + study minutes */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-6">
             <div className={cn(
               "rounded-xl p-4 text-center transition-all",
               progress.streak >= 7

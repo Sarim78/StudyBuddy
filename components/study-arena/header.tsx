@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Flame, Zap, Trophy } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
 import { UserProgress } from "@/lib/study-types"
@@ -26,13 +27,20 @@ export function Header({ progress }: HeaderProps) {
 
   return (
     <header className="border-b border-border/50 bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="mx-auto max-w-6xl px-4 py-3">
+      <div className="mx-auto max-w-6xl px-6 lg:px-16 py-4">
         <div className="flex items-center justify-between">
 
           {/* ── Logo ── */}
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 shadow-lg shadow-primary/20">
-              <Trophy className="h-5 w-5 text-primary-foreground" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl overflow-hidden bg-card shadow-lg shadow-primary/20">
+              <Image
+                src="/StudyLogo.png"
+                alt="StudyBuddy logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-cover"
+                priority
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold tracking-tight">StudyBuddy</h1>

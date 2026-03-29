@@ -52,7 +52,7 @@ export function TaskItem({ task, disabled = false, onToggle }: TaskItemProps) {
     <div
       onClick={() => !disabled && onToggle(task.id)}
       className={cn(
-        "group flex items-start gap-3 rounded-xl border p-4 transition-all cursor-pointer",
+        "group flex items-start gap-4 rounded-xl border p-6 transition-all cursor-pointer",
         // Completed tasks get a subtle green tint
         task.completed
           ? "border-primary/30 bg-primary/5"
@@ -78,7 +78,7 @@ export function TaskItem({ task, disabled = false, onToggle }: TaskItemProps) {
       <div className="flex-1 min-w-0">
 
         {/* Type badge + done indicator */}
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-3 mb-3">
           <span className={cn(
             "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium border",
             config.bgColor, config.color, config.borderColor
@@ -103,7 +103,7 @@ export function TaskItem({ task, disabled = false, onToggle }: TaskItemProps) {
         </p>
 
         {/* Time & XP meta */}
-        <div className="mt-3 flex items-center gap-4 text-xs text-muted-foreground">
+        <div className="mt-4 flex items-center gap-5 text-xs text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <Clock className="h-3.5 w-3.5" />
             {task.estimatedMinutes} min

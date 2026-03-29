@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 // ─── Page Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "StudyBuddy — AI-Powered Study Plans",
+  title: "StudyBuddy",
   description:
     "Transform your study sessions with AI-generated study plans, gamified learning, XP rewards, and progress tracking.",
 }
@@ -30,7 +30,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
         {/* Vercel Analytics — remove if not deploying to Vercel */}
         <Analytics />
