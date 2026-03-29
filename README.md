@@ -3,6 +3,8 @@
 > Transform your study sessions with AI-generated study plans, gamified learning, XP rewards, and progress tracking.
 
 > 🏆 Built as a hackathon project
+
+> Live Link: studybuddybeta.vercel.app/
 ---
 
 ## 🚀 What It Does
